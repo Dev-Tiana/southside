@@ -39,7 +39,7 @@
 * Supply approved bathrooms, facilities, dining, and location images where offered.
 * Record rights holder, permission contact, permitted use, credits, and approval date for every asset.
 * Clear guest, child, staff, creator, photographer, music, logo, and artwork rights.
-* Remove all preview visuals before publishing live pages.
+* Keep the four integrated official social frames in managed storage and retain the source links and user authorization record before publishing live pages.
 
 ## Technical integrations
 

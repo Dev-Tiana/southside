@@ -4,6 +4,7 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { useEffect } from "react";
 import Home from "./pages/Home";
 import Accommodation from "./pages/Accommodation";
 import RoomDetail from "./pages/RoomDetail";
@@ -11,22 +12,23 @@ import Contact from "./pages/Contact";
 import Admin from "./pages/Admin";
 import { Booking, BookingConfirmation } from "./pages/Booking";
 import BookingManage from "./pages/BookingManage";
-import { About, FAQ, Facilities, Gallery, Offers, Policies, VerificationNotes } from "./pages/ContentPages";
+import { About, FAQ, Facilities, Gallery, Offers, Policies } from "./pages/ContentPages";
 
 function PageMeta({ title, description }: { title: string; description: string }) {
-  if (typeof document !== "undefined") {
+  useEffect(() => {
     document.title = `${title} | SouthSide Hotel and Suites`;
     const descriptionTag = document.querySelector('meta[name="description"]') || document.head.appendChild(Object.assign(document.createElement("meta"), { name: "description" }));
     descriptionTag.setAttribute("content", description);
-  }
+  }, [title, description]);
   return null;
 }
 
-function HomeRoute() { return <><PageMeta title="A considered stay in Abraka" description="SouthSide Hotel and Suites in Abraka. Explore accommodation leads, facilities, contact details, and a clear path to a reservation enquiry." /><Home /></>; }
-function AccommodationRoute() { return <><PageMeta title="Accommodation" description="Explore the editable public room catalogue for SouthSide Hotel and Suites in Abraka." /><Accommodation /></>; }
-function RoomRoute() { return <><PageMeta title="Room details" description="Review a SouthSide room category lead, its evidence, and the information awaiting hotel approval." /><RoomDetail /></>; }
-function ContactRoute() { return <><PageMeta title="Contact and location" description="Contact SouthSide Hotel and Suites in Abraka by telephone, email, or enquiry form." /><Contact /></>; }
-function BookingRoute() { return <><PageMeta title="Booking enquiry" description="Check dates and begin a reservation enquiry for SouthSide Hotel and Suites in Abraka." /><Booking /></>; }
+function HomeRoute() { return <><PageMeta title="A considered stay in Abraka" description="SouthSide Hotel and Suites in Abraka, with rooms, spaces, official hotel photography, direct WhatsApp contact, and a clear booking path." /><Home /></>; }
+function AccommodationRoute() { return <><PageMeta title="Rooms and suites" description="Explore rooms and suites at SouthSide Hotel and Suites in Abraka, with public guide rates and direct hotel contact." /><Accommodation /></>; }
+function RoomRoute() { return <><PageMeta title="Room details" description="Explore a SouthSide room in Abraka, see official hotel imagery, and ask the team about dates and rates." /><RoomDetail /></>; }
+function ContactRoute() { return <><PageMeta title="Contact SouthSide Hotel" description="Contact SouthSide Hotel and Suites in Abraka by telephone, email, WhatsApp, or enquiry form." /><Contact /></>; }
+function BookingRoute() { return <><PageMeta title="Book a room" description="Choose dates, guests, and a preferred room for a SouthSide Hotel and Suites stay in Abraka." /><Booking /></>; }
+function ManageBookingRoute() { return <><PageMeta title="Change a booking request" description="Send SouthSide Hotel and Suites a cancellation or modification request by reservation reference." /><BookingManage /></>; }
 
 function Router() {
   return <Switch>
@@ -40,10 +42,9 @@ function Router() {
     <Route path="/offers" component={Offers} />
     <Route path="/faq" component={FAQ} />
     <Route path="/policies" component={Policies} />
-    <Route path="/verification" component={VerificationNotes} />
     <Route path="/booking" component={BookingRoute} />
     <Route path="/booking/confirmation" component={BookingConfirmation} />
-    <Route path="/booking/manage" component={BookingManage} />
+    <Route path="/booking/manage" component={ManageBookingRoute} />
     <Route path="/admin" component={Admin} />
     <Route path="/404" component={NotFound} />
     <Route component={NotFound} />

@@ -1,9 +1,9 @@
 import { Link } from "wouter";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import { RoomCard } from "@/components/RoomCard";
-import { SectionLabel, SouthsideShell, StatusPill } from "@/components/SouthsideShell";
-import { provisionalRooms } from "@shared/hotel";
+import { SectionLabel, SouthsideShell } from "@/components/SouthsideShell";
+import { hotelProfile, provisionalRooms } from "@shared/hotel";
 
 export default function Accommodation() {
-  return <SouthsideShell><section className="page-hero"><div className="page-width"><SectionLabel>Accommodation</SectionLabel><h1>Choose the room that fits your stay.</h1><p>These categories are drawn from public SouthSide leads and remain editable. The hotel must confirm current names, room details, rates, inventory, and approved photographs before live reservation use.</p></div></section><section className="page-content"><div className="page-width"><div className="integrity" style={{ marginBottom: 38 }}><div className="integrity-inner"><div><StatusPill>Public catalogue leads</StatusPill><p style={{ marginTop: 9 }}>A price shown here is a reference only. It is not an offer or a confirmed current rate.</p></div><Link className="text-link" href="/booking">Check an enquiry date <ArrowRight size={15} /></Link></div></div><div className="catalogue-grid">{provisionalRooms.map(room => <RoomCard key={room.slug} room={room} />)}</div></div></section></SouthsideShell>;
+  return <SouthsideShell><section className="page-hero"><div className="page-width"><SectionLabel>Accommodation</SectionLabel><h1>Choose the room that fits your stay.</h1><p>From a calm room for a focused visit to a suite with more space, the SouthSide collection gives you a clear place to begin.</p><div className="page-hero-actions"><Link className="button button-copper" href="/booking">Book now <ArrowRight size={16} /></Link><a className="button button-light" href={hotelProfile.social.whatsapp} target="_blank" rel="noreferrer"><MessageCircle size={16} /> Ask on WhatsApp</a></div></div></section><section className="page-content"><div className="page-width"><div className="catalogue-intro"><div><span className="room-card-kicker">SouthSide room collection</span><h2>Find the right rhythm for your visit.</h2></div><p>Rates shown are public guide rates. Call the hotel for the best current answer for your dates, guests, and preferred room.</p></div><div className="catalogue-grid">{provisionalRooms.map(room => <RoomCard key={room.slug} room={room} />)}</div></div></section></SouthsideShell>;
 }

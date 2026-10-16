@@ -39,3 +39,8 @@ The booking widget must validate dates and guest counts, reject past and invalid
 ## Quality evidence and handoff
 
 Run available type, build, route, UI, availability, pricing, reservation, payment, admin, security, SEO, and accessibility checks. Report actual results. Deliver architecture, database schema, setup, environment variables, migrations, administrator setup, deployment, payment and email instructions, backup and recovery guidance, operating guide, troubleshooting, QA report, launch checklist, unresolved requirements, and confirmation of which items were actually integrated or remain pending.
+
+
+## Homepage and guest contact refinement
+
+Completed for the refinement pass: the homepage no longer leads with a large booking form; it opens with a visual SouthSide hotel story, authentic official social media frames, clear room and facilities sections, and a final booking call to action. The header, footer, room pages, booking flow, contact page, and floating controls include a working WhatsApp link to `wa.me/2347055628339` with prefilled enquiry text. A lightweight chat launcher provides quick questions, an optional enquiry form, success feedback after backend acceptance, and WhatsApp fallback. Public copy removes internal build language and uses direct guest wording while retaining honest rate and contact guidance.
