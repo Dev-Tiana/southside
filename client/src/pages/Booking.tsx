@@ -1,0 +1,12 @@
+import { Link } from "wouter";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { BookingWidget } from "@/components/BookingWidget";
+import { SectionLabel, SouthsideShell, StatusPill } from "@/components/SouthsideShell";
+
+export function Booking() {
+  return <SouthsideShell><section className="page-hero"><div className="page-width"><SectionLabel>Booking enquiry</SectionLabel><h1>Start with the dates that matter.</h1><p>The availability engine is connected to the persistent reservation model. It will only show live inventory after the hotel confirms room categories, inventory, rates, and booking rules.</p></div></section><section className="page-content"><BookingWidget compact /><div className="page-width" style={{ marginTop: 65 }}><div className="section-header"><div><SectionLabel>How it works</SectionLabel><h2>A clear path from question to stay.</h2></div><p>Live payment is not activated. The current public flow is designed to prevent a false promise and keep the hotel in control of confirmation.</p></div><div className="catalogue-grid">{["Search dates", "Review details", "Hotel confirmation"].map((title, index) => <article className="catalogue-card" key={title}><div className="catalogue-card-content"><StatusPill>0{index + 1}</StatusPill><h2>{title}</h2><p>{index === 0 ? "Choose dates, guests, rooms, and a preferred category. The server checks the request." : index === 1 ? "Review a clear summary before sharing your guest details. Browser prices never become authoritative." : "The reservation remains pending until the hotel confirms inventory and any configured payment rule."}</p></div></article>)}</div></div></section></SouthsideShell>;
+}
+
+export function BookingConfirmation() {
+  return <SouthsideShell><section className="page-content"><div className="page-width empty-state" style={{ maxWidth: 720 }}><CheckCircle2 size={32} color="var(--copper)" /><SectionLabel>Pending confirmation</SectionLabel><h1 style={{ font: "400 52px var(--serif)", margin: "15px 0" }}>Your enquiry is in the right place.</h1><p>The hotel has not yet activated live confirmation or payment. A completed reservation will display its unique reference here after the server accepts the guest details and the hotel workflow is configured.</p><Link className="button button-copper" href="/contact" style={{ marginTop: 18 }}>Contact the hotel <ArrowRight size={16} /></Link></div></section></SouthsideShell>;
+}

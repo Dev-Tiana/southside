@@ -1,25 +1,18 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import { ArrowRight, Clock3, MapPin, PhoneCall } from "lucide-react";
+import { Link } from "wouter";
+import { BookingWidget } from "@/components/BookingWidget";
+import { PhotoFrame, SectionLabel, SouthsideShell, StatusPill } from "@/components/SouthsideShell";
+import { RoomCard } from "@/components/RoomCard";
+import { facilityLeads, hotelProfile, provisionalRooms } from "@shared/hotel";
 
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Workflow, Frontend Best Practices, Design Guide and Common Pitfalls
- */
 export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
-
-  return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
-    </div>
-  );
+  return <SouthsideShell>
+    <section className="hero"><div className="hero-inner"><div className="hero-copy"><div className="section-label"><span />A considered stay in Abraka</div><h1>Arrive well.<br /><em>Stay easy.</em></h1><p>SouthSide Hotel and Suites is a welcoming base for time in Abraka. Explore the public room catalogue, check what is ready to be confirmed, and speak with the hotel when you need a clear answer.</p><div className="hero-actions"><Link className="button button-copper" href="/booking">Plan a stay <ArrowRight size={17} /></Link><Link className="button button-light" href="/accommodation">Explore rooms</Link></div><div className="hero-meta"><span><MapPin size={14} /> Winners Street, Abraka</span><span><Clock3 size={14} /> Details awaiting hotel approval</span></div></div><div className="hero-art"><PhotoFrame label="SouthSide in Abraka" detail="Hero photography is reserved for an approved hotel original" variant="copper" /></div></div></section>
+    <BookingWidget />
+    <section className="section"><div className="page-width intro-grid"><div className="intro-copy"><SectionLabel>A clear place to begin</SectionLabel><h2>A little more room for the way you travel.</h2><p>Whether you are visiting for work, meeting people in Abraka, attending an event, or taking a personal break, the first step should feel simple.</p><p>We are shaping this website around accurate room information, useful answers, and a direct line to the hotel. Every detail marked as a public lead remains subject to confirmation.</p><div className="intro-note"><div><span>Location</span><strong>Abraka</strong></div><div><span>Contact</span><strong>Direct</strong></div></div></div><div className="intro-art"><PhotoFrame label="Your hotel story" detail="An approved reception or exterior image will replace this preview" variant="moss" /></div></div></section>
+    <section className="section section-pale"><div className="page-width"><div className="section-header"><div><SectionLabel>Stay your way</SectionLabel><h2>Room leads worth exploring.</h2></div><p>Public room categories are shown as editable leads. Rates, occupancy, beds, amenities, inventory, and images are not live until the hotel confirms them.</p></div><div className="room-grid">{provisionalRooms.slice(0, 4).map(room => <RoomCard key={room.slug} room={room} compact />)}</div><div style={{ marginTop: 33 }}><Link className="text-link" href="/accommodation">See the complete catalogue <ArrowRight size={15} /></Link></div></div></section>
+    <section className="section section-ink"><div className="page-width facility-grid"><div><SectionLabel>Spaces to confirm</SectionLabel><div className="section-header" style={{ display: "block", marginBottom: 0 }}><h2>What belongs to your stay.</h2><p style={{ marginTop: 18 }}>Public social content presents a set of hotel spaces and experiences. We keep each one visible as a lead until the hotel confirms its current details.</p></div><div className="facility-list">{facilityLeads.slice(0, 4).map(item => <div className="facility-item" key={item.title}><h3>{item.title}</h3><p>{item.copy}</p></div>)}</div><div style={{ marginTop: 30 }}><Link className="button button-light" href="/facilities">See spaces and facilities <ArrowRight size={16} /></Link></div></div><div className="facility-art"><PhotoFrame label="Spaces and moments" detail="Only approved SouthSide imagery will be used here" variant="ink" /></div></div></section>
+    <section className="integrity"><div className="page-width integrity-inner"><div><StatusPill>Content integrity</StatusPill><p style={{ marginTop: 9 }}>Public visibility does not establish photo ownership. This build keeps hotel media in approval review until the hotel or rights holder grants permission.</p></div><Link className="text-link" href="/gallery">Review the media plan <ArrowRight size={15} /></Link></div></section>
+    <section className="section"><div className="page-width location-grid"><div><SectionLabel>Find your way</SectionLabel><h2>On Winners Street in Abraka.</h2><p>Public sources converge on Winners Street, Abraka, Delta State, Nigeria. The hotel should confirm the final street wording and postal details before launch.</p><div className="location-card"><a href={`tel:${hotelProfile.phone.replaceAll(" ", "")}`}><PhoneCall size={16} />{hotelProfile.phone}</a><a href={`mailto:${hotelProfile.email}`}><ArrowRight size={16} />{hotelProfile.email}</a><a href={hotelProfile.social.maps} target="_blank" rel="noreferrer"><MapPin size={16} />Open the public map listing</a></div></div><div className="location-map"><div className="location-map-copy"><small>Public location lead</small><strong>Abraka, Delta State</strong></div></div></div></section>
+  </SouthsideShell>;
 }
