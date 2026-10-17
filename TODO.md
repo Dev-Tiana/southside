@@ -44,3 +44,10 @@ Run available type, build, route, UI, availability, pricing, reservation, paymen
 ## Homepage and guest contact refinement
 
 Completed for the refinement pass: the homepage no longer leads with a large booking form; it opens with a visual SouthSide hotel story, authentic official social media frames, clear room and facilities sections, and a final booking call to action. The header, footer, room pages, booking flow, contact page, and floating controls include a working WhatsApp link to `wa.me/2347055628339` with prefilled enquiry text. A lightweight chat launcher provides quick questions, an optional enquiry form, success feedback after backend acceptance, and WhatsApp fallback. Public copy removes internal build language and uses direct guest wording while retaining honest rate and contact guidance.
+
+
+## Destination and evidence refinement
+
+The public site now includes a `/discover` Abraka guide route with four source linked destination leads, explicit cautions about access and current local conditions, and no unsupported distances, hours, prices, or hotel operated tour claims. The destination page also includes three short review excerpts attributed to the public Wanderboat listing with direct source links and no fabricated aggregate rating.
+
+Every public room category now renders a distinct full room visual. Four SouthSide social frames remain source linked and rights gated. Seven generated representative room visuals are clearly labelled as not official hotel photographs and remain subject to replacement or hotel approval before launch.

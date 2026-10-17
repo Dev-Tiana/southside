@@ -11,17 +11,20 @@
 | Route manifest | Passed | `GET /manus-routes.json` returned the declared public route set |
 | Sitemap and robots | Passed | Both files served from the running application |
 | Public route responses | Passed | Home, accommodation, facilities, gallery, contact, FAQ, admin, and unknown route returned application HTML |
-| Desktop visual pass | Passed | Preview screenshots captured for home, accommodation, contact, and admin at 1280 pixels |
-| Mobile visual pass | Passed | Preview screenshots captured for home, accommodation, and contact at 375 pixels |
+| Desktop visual pass | Passed | Preview screenshots captured for home, accommodation, contact, admin, Abraka guide, and room detail at 1280 pixels |
+| Mobile visual pass | Passed | Preview screenshots captured for home, accommodation, contact, Abraka guide, and room catalogue at 375 pixels |
 | Dashboard guard | Passed visually | Unauthenticated dashboard showed a staff access gate and no private records |
 | Booking helper unit tests | Passed | `pnpm test` completed with 9 tests passing, including date boundary and server pricing tests |
 | Official media integration | Passed | Four official SouthSide social frames are stored in managed project storage and rendered on home, rooms, facilities, and gallery pages |
 | WhatsApp contact layer | Passed | Header, footer, room pages, booking paths, contact page, floating action, and chat fallback point to `wa.me/2347055628339` with prefilled enquiry text |
 | Chat enquiry capture | Passed | Chat launcher provides quick questions, WhatsApp fallback, optional enquiry form, and accepted submission feedback |
+| Room imagery coverage | Passed | Every public room category now has a distinct full-room visual; hotel supplied images and representative generated visuals are labelled separately |
+| Abraka guide route | Passed | `/discover` is registered in the router, route manifest, sitemap, and page metadata; destination leads include public source links and no unsupported distances or hours |
+| Review provenance | Passed | Three short excerpts are attributed to the public Wanderboat listing with direct source links; no unsupported aggregate rating is presented as a SouthSide claim |
 
 ## Implemented features
 
-The public site has an original editorial hospitality design, responsive header and footer, homepage, accommodation catalogue, room detail routes, facilities, gallery, about, contact and location, offers, FAQ, policies, booking enquiry, confirmation state, and a protected dashboard entry.
+The public site has an original editorial hospitality design, responsive header and footer, homepage, accommodation catalogue, distinct room detail routes, facilities, gallery, about, Abraka destination guide, attributed review excerpts, contact and location, offers, FAQ, policies, booking enquiry, confirmation state, and a protected dashboard entry.
 
 The backend has a persistent database schema for users, room categories, rates, inventory blocks, guests, reservations, status history, holds, payments, contact submissions, media assets, hotel settings, and audit logs. The server exposes availability search, server side date validation, reservation transaction logic, contact submission, public catalogue, and protected summary procedures.
 
@@ -37,11 +40,11 @@ The dashboard summary code is present but has no operational reservations to dis
 
 Live Paystack requires test or live credentials, account approval, webhook configuration, server side tests, and a reservation payment state handler. Email notifications require an approved business email provider. WhatsApp is implemented as a direct enquiry route and should be confirmed by the hotel before launch. Search Console, analytics, maps, public domain, and canonical metadata require authorized account or deployment access.
 
-The hotel must confirm official business details, room categories, inventory, occupancy, beds, amenities, prices, photographs and rights, policies, operating times, taxes, accepted payment methods, and staff roles.
+The hotel must confirm official business details, room categories, inventory, occupancy, beds, amenities, prices, approved photographs and rights, policies, operating times, taxes, accepted payment methods, destination copy, and staff roles.
 
 ## Not completed
 
-Four official SouthSide social frames were downloaded, uploaded to managed storage, and integrated after the user authorized use of publicly accessible official media. The direct hotel rights record should still be retained before launch. No final hotel logo was supplied. No live payment flow, email delivery, automatic expired hold worker, role administration screen, media upload screen, reservation calendar, or production deployment was completed in this implementation pass. Reservation modification requests are implemented as a public request form rather than an automatic change.
+Four SouthSide social frames were downloaded, uploaded to managed storage, and integrated after the user authorized use of publicly accessible official media. Seven additional representative room visuals were generated for missing category coverage and are explicitly labelled as not official hotel photographs. The direct hotel rights record should still be retained before launch. No final hotel logo was supplied. No live payment flow, email delivery, automatic expired hold worker, role administration screen, media upload screen, reservation calendar, or production deployment was completed in this implementation pass. Reservation modification requests are implemented as a public request form rather than an automatic change.
 
 ## Known limitations
 

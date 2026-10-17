@@ -12,7 +12,7 @@ import Contact from "./pages/Contact";
 import Admin from "./pages/Admin";
 import { Booking, BookingConfirmation } from "./pages/Booking";
 import BookingManage from "./pages/BookingManage";
-import { About, FAQ, Facilities, Gallery, Offers, Policies } from "./pages/ContentPages";
+import { About, Discover, FAQ, Facilities, Gallery, Offers, Policies } from "./pages/ContentPages";
 
 function PageMeta({ title, description }: { title: string; description: string }) {
   useEffect(() => {
@@ -29,6 +29,7 @@ function RoomRoute() { return <><PageMeta title="Room details" description="Expl
 function ContactRoute() { return <><PageMeta title="Contact SouthSide Hotel" description="Contact SouthSide Hotel and Suites in Abraka by telephone, email, WhatsApp, or enquiry form." /><Contact /></>; }
 function BookingRoute() { return <><PageMeta title="Book a room" description="Choose dates, guests, and a preferred room for a SouthSide Hotel and Suites stay in Abraka." /><Booking /></>; }
 function ManageBookingRoute() { return <><PageMeta title="Change a booking request" description="Send SouthSide Hotel and Suites a cancellation or modification request by reservation reference." /><BookingManage /></>; }
+function DiscoverRoute() { return <><PageMeta title="Abraka guide" description="Public destination leads and local context for guests staying at SouthSide Hotel and Suites in Abraka." /><Discover /></>; }
 
 function Router() {
   return <Switch>
@@ -38,6 +39,7 @@ function Router() {
     <Route path="/facilities" component={Facilities} />
     <Route path="/gallery" component={Gallery} />
     <Route path="/about" component={About} />
+    <Route path="/discover" component={DiscoverRoute} />
     <Route path="/contact" component={ContactRoute} />
     <Route path="/offers" component={Offers} />
     <Route path="/faq" component={FAQ} />

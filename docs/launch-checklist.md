@@ -39,7 +39,9 @@
 * Supply approved bathrooms, facilities, dining, and location images where offered.
 * Record rights holder, permission contact, permitted use, credits, and approval date for every asset.
 * Clear guest, child, staff, creator, photographer, music, logo, and artwork rights.
-* Keep the four integrated official social frames in managed storage and retain the source links and user authorization record before publishing live pages.
+* Keep the four integrated SouthSide social frames in managed storage and retain the source links and user authorization record before publishing live pages.
+* Replace or explicitly approve the seven representative generated room visuals with hotel supplied category photographs before presenting them as factual room depictions.
+* Review the Abraka guide and attributable review excerpts for current accuracy and source availability before launch.
 
 ## Technical integrations
 

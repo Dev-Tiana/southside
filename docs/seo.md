@@ -13,6 +13,8 @@
 | Hotel booking in Abraka | Booking | Date search path is available and stops at safe pending confirmation |
 | SouthSide Hotel contact | Contact | Telephone, email, location lead, and enquiry form are visible |
 | SouthSide Hotel facilities | Facilities | Publicly presented facility leads are separated from confirmed promises |
+| Things to do in Abraka | Abraka guide | Public destination leads are source linked and avoid unsupported distance or hours |
+| SouthSide Hotel reviews | Abraka guide and home | Short excerpts are attributed to Wanderboat and do not create a new aggregate rating |
 
 ## Implemented technical SEO
 
@@ -33,7 +35,7 @@ No fake reviews, ratings, awards, hotel classifications, or structured data clai
 
 ## Answer and generative search readiness
 
-The public pages answer what the hotel is, where it is provisionally located, how to contact it, how a guest can begin a reservation, which room categories are public leads, and which facilities still require confirmation. The copy uses clear headings and direct answers instead of unsupported superlatives. Private reservations and staff records are not exposed.
+The public pages answer what the hotel is, where it is provisionally located, how to contact it, how a guest can begin a reservation, which room categories are public leads, which facilities still require confirmation, and which local experiences have public evidence. The copy uses clear headings and direct answers instead of unsupported superlatives. Private reservations and staff records are not exposed.
 
 ## Ninety day plan
 
@@ -43,7 +45,7 @@ Confirm the business identity, address, room catalogue, rates, policies, approve
 
 ### Days 31 to 60
 
-Publish approved room and facility photography, add accurate room details, verify the contact workflow, request genuine guest reviews, and create one useful local guide only after checking every local fact. Improve internal links between accommodation, location, FAQs, and booking pages. Review Search Console queries and page indexing after data exists.
+Publish approved room and facility photography, add accurate room details, verify the contact workflow, request genuine guest reviews, and maintain the Abraka guide only after checking every local fact. Improve internal links between accommodation, location, FAQs, booking, and the destination guide. Review Search Console queries and page indexing after data exists, and remove stale travel times, opening hours, or ratings if sources change.
 
 ### Days 61 to 90
 

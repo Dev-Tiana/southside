@@ -5,7 +5,7 @@ import { hotelProfile } from "@shared/hotel";
 import { ChatWidget } from "@/components/ChatWidget";
 
 export function BrandMark({ compact = false }: { compact?: boolean }) {
-  return <Link href="/" className={`brand-mark ${compact ? "brand-mark-compact" : ""}`} aria-label="SouthSide Hotel and Suites home"><span className="brand-mark-icon">SS</span><span><strong>SouthSide</strong><em>Hotel and Suites</em></span></Link>;
+  return <Link href="/" className={`brand-mark ${compact ? "brand-mark-compact" : ""}`} aria-label="SouthSide Hotel and Suites home"><span><strong>SouthSide</strong><em>Hotel and Suites</em></span></Link>;
 }
 
 export function StatusPill({ children, tone = "warm" }: { children: React.ReactNode; tone?: "warm" | "ink" | "pale" }) {
@@ -27,7 +27,7 @@ export function SectionLabel({ children }: { children: React.ReactNode }) {
 
 export function SouthsideShell({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false);
-  const links = [{ href: "/accommodation", label: "Stay" }, { href: "/facilities", label: "Spaces" }, { href: "/gallery", label: "Gallery" }, { href: "/about", label: "Our story" }, { href: "/contact", label: "Contact" }];
+  const links = [{ href: "/accommodation", label: "Stay" }, { href: "/facilities", label: "Spaces" }, { href: "/gallery", label: "Gallery" }, { href: "/discover", label: "Abraka" }, { href: "/contact", label: "Contact" }];
   return <div className="site-shell">
     <header className="site-header">
       <div className="site-header-inner">
@@ -44,7 +44,7 @@ export function SouthsideShell({ children }: { children: React.ReactNode }) {
     <footer className="site-footer">
       <div className="footer-grid page-width">
         <div><BrandMark /><p className="footer-intro">A warm place to arrive in Abraka. Explore the rooms, discover the spaces, and speak with the hotel when you are ready.</p><div className="footer-social"><a href={hotelProfile.social.instagram} target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram size={17} /></a><a href={hotelProfile.social.maps} target="_blank" rel="noreferrer" aria-label="Google Maps"><MapPin size={17} /></a><a href={hotelProfile.social.whatsapp} target="_blank" rel="noreferrer" aria-label="WhatsApp"><MessageCircle size={17} /></a></div></div>
-        <div><small className="footer-heading">Explore</small><Link href="/accommodation">Accommodation</Link><Link href="/facilities">Spaces and facilities</Link><Link href="/gallery">Gallery</Link><Link href="/faq">Questions</Link></div>
+        <div><small className="footer-heading">Explore</small><Link href="/accommodation">Accommodation</Link><Link href="/facilities">Spaces and facilities</Link><Link href="/gallery">Gallery</Link><Link href="/discover">Abraka guide</Link><Link href="/faq">Questions</Link></div>
         <div><small className="footer-heading">Speak with us</small><a href={`tel:${hotelProfile.phone.replaceAll(" ", "")}`}>{hotelProfile.phone}</a><a href={`mailto:${hotelProfile.email}`}>{hotelProfile.email}</a><a href={hotelProfile.social.whatsapp} target="_blank" rel="noreferrer">WhatsApp the hotel</a><span>{hotelProfile.location}</span></div>
         <div><small className="footer-heading">Plan your stay</small><Link href="/booking">Book a room</Link><Link href="/booking/manage">Change a request</Link><Link href="/contact">Contact and directions</Link><span className="footer-note">Room rates are shown as public guides. Call the hotel for the best current answer.</span></div>
       </div>
