@@ -21,6 +21,7 @@
 | Room imagery coverage | Passed | Every public room category now has a distinct full-room visual; hotel supplied images and representative generated visuals are labelled separately |
 | Abraka guide route | Passed | `/discover` is registered in the router, route manifest, sitemap, and page metadata; destination leads include public source links and no unsupported distances or hours |
 | Review provenance | Passed | Three short excerpts are attributed to the public Wanderboat listing with direct source links; no unsupported aggregate rating is presented as a SouthSide claim |
+| Native video playback | Passed | The homepage tour uses a managed MP4 with `autoPlay`, `muted`, `loop`, and `playsInline`; image and video provenance explanations are removed from visible media overlays |
 
 ## Implemented features
 

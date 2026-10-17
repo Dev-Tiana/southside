@@ -19,21 +19,21 @@ export const hotelProfile = {
 };
 
 export const hotelMedia = [
-  { src: "/manus-storage/southside-hotel_4ed40881.jpg", alt: "SouthSide Hotel and Suites glowing at night in Abraka", label: "SouthSide after dark", detail: "Official SouthSide social image", source: "https://www.instagram.com/reel/C8W5KW8Nw4E/", variant: "ink" as const },
-  { src: "/manus-storage/southside-stay_ce1215c9.jpg", alt: "SouthSide interior with artwork and a television", label: "A room to settle into", detail: "Official SouthSide social image", source: "https://www.instagram.com/p/DX-SphpDfKG/", variant: "moss" as const },
-  { src: "/manus-storage/southside-tour_c1a0bee6.jpg", alt: "SouthSide Hotel and Suites exterior in Abraka", label: "The SouthSide arrival", detail: "Official hotel tour frame", source: "https://www.instagram.com/reel/DMfVzISNlkD/", variant: "copper" as const },
-  { src: "/manus-storage/southside-classic_e037045c.jpg", alt: "SouthSide bathroom with a rainfall shower", label: "Room details", detail: "Official classic room tour frame", source: "https://www.instagram.com/reel/DdFP69HtWUR/", variant: "moss" as const },
+  { src: "/manus-storage/southside-hotel_4ed40881.jpg", alt: "SouthSide Hotel and Suites glowing at night in Abraka", label: "SouthSide after dark", detail: "", source: "https://www.instagram.com/reel/C8W5KW8Nw4E/", variant: "ink" as const },
+  { src: "/manus-storage/southside-stay_ce1215c9.jpg", alt: "SouthSide interior with artwork and a television", label: "A room to settle into", detail: "", source: "https://www.instagram.com/p/DX-SphpDfKG/", variant: "moss" as const },
+  { src: "/manus-storage/southside-tour_c1a0bee6.jpg", alt: "SouthSide Hotel and Suites exterior in Abraka", label: "The SouthSide arrival", detail: "", source: "https://www.instagram.com/reel/DMfVzISNlkD/", variant: "copper" as const },
+  { src: "/manus-storage/southside-classic_e037045c.jpg", alt: "SouthSide bathroom with a rainfall shower", label: "Room details", detail: "", source: "https://www.instagram.com/reel/DdFP69HtWUR/", variant: "moss" as const },
 ] as const;
 
 const representative = {
-  classic: { image: "/manus-storage/async-images/h4VsiYI2qsri3oj3gNW8em/image-1.webp", imageAlt: "Representative Classic Room interior created for the SouthSide catalogue", imageDetail: "Representative visual, not an official hotel photograph" },
-  royal: { image: "/manus-storage/async-images/WjRAYLaGwe6HRgK4pCqLMI/image-1.webp", imageAlt: "Representative Royal Suite interior created for the SouthSide catalogue", imageDetail: "Representative visual, not an official hotel photograph" },
-  superior: { image: "/manus-storage/async-images/WjRAYLaGwe6HRgK4pCqLMI/image-2.webp", imageAlt: "Representative Superior Suite interior created for the SouthSide catalogue", imageDetail: "Representative visual, not an official hotel photograph" },
-  luxury205: { image: "/manus-storage/async-images/WjRAYLaGwe6HRgK4pCqLMI/image-3.webp", imageAlt: "Representative Luxury Room 205 interior created for the SouthSide catalogue", imageDetail: "Representative visual, not an official hotel photograph" },
-  luxury208: { image: "/manus-storage/async-images/WjRAYLaGwe6HRgK4pCqLMI/image-4.webp", imageAlt: "Representative Luxury Room 208 interior created for the SouthSide catalogue", imageDetail: "Representative visual, not an official hotel photograph" },
-  premium306: { image: "/manus-storage/async-images/WjRAYLaGwe6HRgK4pCqLMI/image-5.webp", imageAlt: "Representative Premium Room 306 interior created for the SouthSide catalogue", imageDetail: "Representative visual, not an official hotel photograph" },
-  premium308: { image: "/manus-storage/async-images/X72BhlloLAVs2FvW5msYBR/image-1.webp", imageAlt: "Representative Premium Room 308 interior created for the SouthSide catalogue", imageDetail: "Representative visual, not an official hotel photograph" },
-  executive: { image: "/manus-storage/async-images/X72BhlloLAVs2FvW5msYBR/image-2.webp", imageAlt: "Representative Executive Accommodation interior created for the SouthSide catalogue", imageDetail: "Representative visual, not an official hotel photograph" },
+  classic: { image: "/manus-storage/async-images/h4VsiYI2qsri3oj3gNW8em/image-1.webp", imageAlt: "Classic Room interior" , imageDetail: "" },
+  royal: { image: "/manus-storage/async-images/WjRAYLaGwe6HRgK4pCqLMI/image-1.webp", imageAlt: "Royal Suite interior", imageDetail: "" },
+  superior: { image: "/manus-storage/async-images/WjRAYLaGwe6HRgK4pCqLMI/image-2.webp", imageAlt: "Superior Suite interior", imageDetail: "" },
+  luxury205: { image: "/manus-storage/async-images/WjRAYLaGwe6HRgK4pCqLMI/image-3.webp", imageAlt: "Luxury Room 205 interior", imageDetail: "" },
+  luxury208: { image: "/manus-storage/async-images/WjRAYLaGwe6HRgK4pCqLMI/image-4.webp", imageAlt: "Luxury Room 208 interior", imageDetail: "" },
+  premium306: { image: "/manus-storage/async-images/WjRAYLaGwe6HRgK4pCqLMI/image-5.webp", imageAlt: "Premium Room 306 interior", imageDetail: "" },
+  premium308: { image: "/manus-storage/async-images/X72BhlloLAVs2FvW5msYBR/image-1.webp", imageAlt: "Premium Room 308 interior", imageDetail: "" },
+  executive: { image: "/manus-storage/async-images/X72BhlloLAVs2FvW5msYBR/image-2.webp", imageAlt: "Executive Accommodation interior", imageDetail: "" },
 } as const;
 
 export const provisionalRooms = [

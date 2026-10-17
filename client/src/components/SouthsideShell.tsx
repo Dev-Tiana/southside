@@ -13,10 +13,10 @@ export function StatusPill({ children, tone = "warm" }: { children: React.ReactN
 }
 
 export function PhotoFrame({ label, detail, className = "", variant = "copper", src, alt, href, priority = false }: { label: string; detail: string; className?: string; variant?: "copper" | "moss" | "ink"; src?: string; alt?: string; href?: string; priority?: boolean }) {
-  const content = <div className={`photo-frame photo-${variant} ${src ? "photo-frame-image" : ""} ${className}`} role="img" aria-label={`${label}. ${alt ?? detail}`}>
+  const content = <div className={`photo-frame photo-${variant} ${src ? "photo-frame-image" : ""} ${className}`} role="img" aria-label={`${label}. ${alt ?? "SouthSide Hotel and Suites image"}`}>
     {src ? <img src={src} alt={alt ?? label} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : "auto"} /> : <><span className="photo-shape photo-shape-one" /><span className="photo-shape photo-shape-two" /><span className="photo-shape photo-shape-three" /></>}
     <div className="photo-frame-wash" />
-    <div className="photo-frame-copy"><small>SouthSide Hotel and Suites</small><strong>{label}</strong><span>{detail}</span></div>
+    <div className="photo-frame-copy"><strong>{label}</strong></div>
   </div>;
   return href ? <a className="photo-frame-link" href={href} target="_blank" rel="noreferrer" aria-label={`${label}. Open source`}>{content}</a> : content;
 }
