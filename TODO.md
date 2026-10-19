@@ -56,3 +56,8 @@ Every public room category now renders a distinct full room visual. Four SouthSi
 ## Video playback and media presentation refinement
 
 The homepage SouthSide tour now uses the official public tour video as a managed MP4 with native `autoPlay`, `muted`, `loop`, and `playsInline` playback. The unreliable third party iframe was removed. Visible explanatory image and video captions were removed throughout the public media frames while concise image titles and accessible alt text remain.
+
+
+## Supplied social media and logo refinement
+
+The user-supplied SouthSide Instagram and TikTok links are incorporated into the gallery source cards. Three accessible Instagram reels are stored in managed project storage and used as native muted, looping, inline autoplay videos on the homepage hero, homepage story, and gallery. The supplied TikTok video and photo links remain directly available from the gallery because TikTok extraction was blocked in this environment. The supplied SouthSide logo is used in the header and footer, with the compact header logo narrowed to keep the navigation usable.
