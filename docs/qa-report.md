@@ -18,10 +18,10 @@
 | Official media integration | Passed | Four official SouthSide social frames are stored in managed project storage and rendered on home, rooms, facilities, and gallery pages |
 | WhatsApp contact layer | Passed | Header, footer, room pages, booking paths, contact page, floating action, and chat fallback point to `wa.me/2347055628339` with prefilled enquiry text |
 | Chat enquiry capture | Passed | Chat launcher provides quick questions, WhatsApp fallback, optional enquiry form, and accepted submission feedback |
-| Room imagery coverage | Passed | Every public room category now has a distinct full-room visual; hotel supplied images and representative generated visuals are labelled separately |
+| Room imagery coverage | Partial by evidence | Room cards and room detail pages now use an automatic carousel component; the public UI uses authorized SouthSide media only, with the classic lead also showing the bathroom frame. Dedicated approved photography for every category is still needed before each category can be represented as a distinct collection |
 | Abraka guide route | Passed | `/discover` is registered in the router, route manifest, sitemap, and page metadata; destination leads include public source links and no unsupported distances or hours |
 | Review provenance | Passed | Three short excerpts are attributed to the public Wanderboat listing with direct source links; no unsupported aggregate rating is presented as a SouthSide claim |
-| Native video playback | Passed | The homepage tour uses a managed MP4 with `autoPlay`, `muted`, `loop`, and `playsInline`; image and video provenance explanations are removed from visible media overlays |
+| Native video playback | Passed | The homepage and gallery tour use a managed MP4 with `autoPlay`, `muted`, `loop`, and `playsInline`; the gallery, story, room, and room detail media use automatic carousels with manual controls and touch swipe |
 
 ## Implemented features
 
@@ -45,7 +45,7 @@ The hotel must confirm official business details, room categories, inventory, oc
 
 ## Not completed
 
-Four SouthSide social frames were downloaded, uploaded to managed storage, and integrated after the user authorized use of publicly accessible official media. Seven additional representative room visuals were generated for missing category coverage and are explicitly labelled as not official hotel photographs. The direct hotel rights record should still be retained before launch. No final hotel logo was supplied. No live payment flow, email delivery, automatic expired hold worker, role administration screen, media upload screen, reservation calendar, or production deployment was completed in this implementation pass. Reservation modification requests are implemented as a public request form rather than an automatic change.
+Four SouthSide social frames and one public tour video were downloaded, uploaded to managed storage, and integrated after the user authorized use of publicly accessible SouthSide media. Generated room visuals are not used in the public UI. The direct hotel rights record should still be retained before launch, and dedicated approved photos are still needed for each live room category. No final hotel logo was supplied. No live payment flow, email delivery, automatic expired hold worker, role administration screen, media upload screen, reservation calendar, or production deployment was completed in this implementation pass. Reservation modification requests are implemented as a public request form rather than an automatic change.
 
 ## Known limitations
 

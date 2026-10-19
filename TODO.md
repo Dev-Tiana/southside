@@ -50,9 +50,9 @@ Completed for the refinement pass: the homepage no longer leads with a large boo
 
 The public site now includes a `/discover` Abraka guide route with four source linked destination leads, explicit cautions about access and current local conditions, and no unsupported distances, hours, prices, or hotel operated tour claims. The destination page also includes three short review excerpts attributed to the public Wanderboat listing with direct source links and no fabricated aggregate rating.
 
-Every public room category now renders a distinct full room visual. Four SouthSide social frames remain source linked and rights gated. Seven generated representative room visuals are clearly labelled as not official hotel photographs and remain subject to replacement or hotel approval before launch.
+Every public room category now renders through the shared automatic room-media carousel using authorized SouthSide media only; the classic lead also includes its bathroom frame. Four SouthSide social frames and the public tour video remain source linked and rights gated. Dedicated approved photography is still needed for each live room category before each can be presented as its own distinct collection.
 
 
 ## Video playback and media presentation refinement
 
-The homepage SouthSide tour now uses the official public tour video as a managed MP4 with native `autoPlay`, `muted`, `loop`, and `playsInline` playback. The unreliable third party iframe was removed. Visible explanatory image and video captions were removed throughout the public media frames while concise image titles and accessible alt text remain.
+The homepage and gallery SouthSide tour use the public tour video as a managed MP4 with native `autoPlay`, `muted`, `loop`, and `playsInline` playback. The unreliable third party iframe was removed. The story, gallery, room cards, and room detail pages use automatic media carousels with arrows, dots, and touch swipe. Visible explanatory image and video captions were removed while concise image titles and accessible alt text remain.

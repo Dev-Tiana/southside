@@ -21,6 +21,12 @@ export function PhotoFrame({ label, detail, className = "", variant = "copper", 
   return href ? <a className="photo-frame-link" href={href} target="_blank" rel="noreferrer" aria-label={`${label}. Open source`}>{content}</a> : content;
 }
 
+export function AutoPlayVideo({ src, poster, alt, className = "" }: { src: string; poster: string; alt: string; className?: string }) {
+  return <video className={`autoplay-video ${className}`} autoPlay muted loop playsInline preload="metadata" poster={poster} aria-label={alt}>
+    <source src={src} type="video/mp4" />
+  </video>;
+}
+
 export function SectionLabel({ children }: { children: React.ReactNode }) {
   return <div className="section-label"><span />{children}</div>;
 }
@@ -46,7 +52,7 @@ export function SouthsideShell({ children }: { children: React.ReactNode }) {
         <div><BrandMark /><p className="footer-intro">A warm place to arrive in Abraka. Explore the rooms, discover the spaces, and speak with the hotel when you are ready.</p><div className="footer-social"><a href={hotelProfile.social.instagram} target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram size={17} /></a><a href={hotelProfile.social.maps} target="_blank" rel="noreferrer" aria-label="Google Maps"><MapPin size={17} /></a><a href={hotelProfile.social.whatsapp} target="_blank" rel="noreferrer" aria-label="WhatsApp"><MessageCircle size={17} /></a></div></div>
         <div><small className="footer-heading">Explore</small><Link href="/accommodation">Accommodation</Link><Link href="/facilities">Spaces and facilities</Link><Link href="/gallery">Gallery</Link><Link href="/discover">Abraka guide</Link><Link href="/faq">Questions</Link></div>
         <div><small className="footer-heading">Speak with us</small><a href={`tel:${hotelProfile.phone.replaceAll(" ", "")}`}>{hotelProfile.phone}</a><a href={`mailto:${hotelProfile.email}`}>{hotelProfile.email}</a><a href={hotelProfile.social.whatsapp} target="_blank" rel="noreferrer">WhatsApp the hotel</a><span>{hotelProfile.location}</span></div>
-        <div><small className="footer-heading">Plan your stay</small><Link href="/booking">Book a room</Link><Link href="/booking/manage">Change a request</Link><Link href="/contact">Contact and directions</Link><span className="footer-note">Room rates are shown as public guides. Call the hotel for the best current answer.</span></div>
+        <div><small className="footer-heading">Plan your stay</small><Link href="/booking">Book a room</Link><Link href="/booking/manage">Change a request</Link><Link href="/contact">Contact and directions</Link><span className="footer-note">Confirmed nightly room rates are listed throughout the site. Call the hotel to plan your dates.</span></div>
       </div>
       <div className="footer-bottom page-width"><span>© {new Date().getFullYear()} SouthSide Hotel and Suites</span><span>Made for clear, direct stays</span></div>
     </footer>

@@ -24,7 +24,7 @@ function PageMeta({ title, description }: { title: string; description: string }
 }
 
 function HomeRoute() { return <><PageMeta title="A considered stay in Abraka" description="SouthSide Hotel and Suites in Abraka, with rooms, spaces, official hotel photography, direct WhatsApp contact, and a clear booking path." /><Home /></>; }
-function AccommodationRoute() { return <><PageMeta title="Rooms and suites" description="Explore rooms and suites at SouthSide Hotel and Suites in Abraka, with public guide rates and direct hotel contact." /><Accommodation /></>; }
+function AccommodationRoute() { return <><PageMeta title="Rooms and suites" description="Explore rooms and suites at SouthSide Hotel and Suites in Abraka, with confirmed nightly rates and direct hotel contact." /><Accommodation /></>; }
 function RoomRoute() { return <><PageMeta title="Room details" description="Explore a SouthSide room in Abraka, see official hotel imagery, and ask the team about dates and rates." /><RoomDetail /></>; }
 function ContactRoute() { return <><PageMeta title="Contact SouthSide Hotel" description="Contact SouthSide Hotel and Suites in Abraka by telephone, email, WhatsApp, or enquiry form." /><Contact /></>; }
 function BookingRoute() { return <><PageMeta title="Book a room" description="Choose dates, guests, and a preferred room for a SouthSide Hotel and Suites stay in Abraka." /><Booking /></>; }
