@@ -25,27 +25,6 @@ export const hotelMedia = [
   { src: "/manus-storage/southside-classic_e037045c.jpg", alt: "SouthSide bathroom with a rainfall shower", label: "Room details", detail: "", source: "https://www.instagram.com/reel/DdFP69HtWUR/", variant: "moss" as const },
 ] as const;
 
-export const socialVideos = [
-  { src: "/manus-storage/DSmzuv9DTZB_89a06684.mp4", poster: "/manus-storage/DSmzuv9DTZB_eb0cc0c8.jpg", alt: "SouthSide Hotel and Suites social video from Instagram", source: "https://www.instagram.com/reel/DSmzuv9DTZB/" },
-  { src: "/manus-storage/C8W5KW8Nw4E_04199a36.mp4", poster: "/manus-storage/C8W5KW8Nw4E_36ffc9c9.jpg", alt: "SouthSide Hotel and Suites evening social video from Instagram", source: "https://www.instagram.com/reel/C8W5KW8Nw4E/" },
-  { src: "/manus-storage/Dd_fZSPtsv7_4735848f.mp4", poster: "/manus-storage/Dd_fZSPtsv7_ccb685e3.jpg", alt: "SouthSide Hotel and Suites social video from Instagram", source: "https://www.instagram.com/reel/Dd_fZSPtsv7/" },
-] as const;
-
-export const socialSourceLinks = [
-  { label: "Instagram reel", url: "https://www.instagram.com/reel/DSmzuv9DTZB/", type: "Video" },
-  { label: "Instagram reel", url: "https://www.instagram.com/reel/C8W5KW8Nw4E/", type: "Video" },
-  { label: "Instagram reel", url: "https://www.instagram.com/reel/Dd_fZSPtsv7/", type: "Video" },
-  { label: "Instagram post", url: "https://www.instagram.com/p/DdrlHBijcr4/", type: "Image" },
-  { label: "TikTok room video", url: "https://www.tiktok.com/@southside.hotel.abraka/video/7682730625278709013", type: "Video" },
-  { label: "TikTok hotel video", url: "https://www.tiktok.com/@southside.hotel.abraka/video/7664302571506470165", type: "Video" },
-  { label: "TikTok hotel video", url: "https://www.tiktok.com/@southside.hotel.abraka/video/7691392435246730516", type: "Video" },
-  { label: "TikTok hotel video", url: "https://www.tiktok.com/@southside.hotel.abraka/video/7683643828271664404", type: "Video" },
-  { label: "TikTok gym video", url: "https://www.tiktok.com/@southside.hotel.abraka/video/7653211068780662036", type: "Video" },
-  { label: "TikTok hotel video", url: "https://www.tiktok.com/@southside.hotel.abraka/video/7646516995982101781", type: "Video" },
-  { label: "TikTok photo", url: "https://www.tiktok.com/@southside.hotel.abraka/photo/7631138884205759765", type: "Image" },
-  { label: "TikTok photo", url: "https://www.tiktok.com/@southside.hotel.abraka/photo/7609723933939584276", type: "Image" },
-] as const;
-
 const representative = {
   classic: { image: "/manus-storage/async-images/h4VsiYI2qsri3oj3gNW8em/image-1.webp", imageAlt: "Classic Room interior" , imageDetail: "" },
   royal: { image: "/manus-storage/async-images/WjRAYLaGwe6HRgK4pCqLMI/image-1.webp", imageAlt: "Royal Suite interior", imageDetail: "" },

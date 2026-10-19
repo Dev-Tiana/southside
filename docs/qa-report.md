@@ -21,7 +21,7 @@
 | Room imagery coverage | Passed | Every public room category now has a distinct full-room visual; hotel supplied images and representative generated visuals are labelled separately |
 | Abraka guide route | Passed | `/discover` is registered in the router, route manifest, sitemap, and page metadata; destination leads include public source links and no unsupported distances or hours |
 | Review provenance | Passed | Three short excerpts are attributed to the public Wanderboat listing with direct source links; no unsupported aggregate rating is presented as a SouthSide claim |
-| Native video playback | Passed for accessible reels | The homepage hero, homepage story, and gallery use three user-supplied Instagram reels as native MP4 video with `autoPlay`, `muted`, `loop`, and `playsInline`; the supplied TikTok URLs are linked in the gallery source cards because direct TikTok extraction was blocked in this environment |
+| Native video playback | Passed | The homepage tour uses a managed MP4 with `autoPlay`, `muted`, `loop`, and `playsInline`; image and video provenance explanations are removed from visible media overlays |
 
 ## Implemented features
 
@@ -41,7 +41,7 @@ The dashboard summary code is present but has no operational reservations to dis
 
 Live Paystack requires test or live credentials, account approval, webhook configuration, server side tests, and a reservation payment state handler. Email notifications require an approved business email provider. WhatsApp is implemented as a direct enquiry route and should be confirmed by the hotel before launch. Search Console, analytics, maps, public domain, and canonical metadata require authorized account or deployment access.
 
-The hotel must confirm official business details, room categories, inventory, occupancy, beds, amenities, prices, approved photographs and rights, policies, operating times, taxes, accepted payment methods, destination copy, staff roles, and website use of the supplied social videos and images.
+The hotel must confirm official business details, room categories, inventory, occupancy, beds, amenities, prices, approved photographs and rights, policies, operating times, taxes, accepted payment methods, destination copy, and staff roles.
 
 ## Not completed
 
