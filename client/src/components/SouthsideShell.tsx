@@ -5,7 +5,7 @@ import { hotelProfile } from "@shared/hotel";
 import { ChatWidget } from "@/components/ChatWidget";
 
 export function BrandMark({ compact = false }: { compact?: boolean }) {
-  return <Link href="/" className={`brand-mark ${compact ? "brand-mark-compact" : ""}`} aria-label="SouthSide Hotel and Suites home"><span><strong>SouthSide</strong><em>Hotel and Suites</em></span></Link>;
+  return <Link href="/" className={`brand-mark ${compact ? "brand-mark-compact" : ""}`} aria-label="SouthSide Hotel and Suites home"><img className="brand-mark-image" src="/southside-hotel-logo.jpg" alt="SouthSide Hotel and Suites" /></Link>;
 }
 
 export function StatusPill({ children, tone = "warm" }: { children: React.ReactNode; tone?: "warm" | "ink" | "pale" }) {
