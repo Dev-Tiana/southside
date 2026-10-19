@@ -25,33 +25,26 @@ export const hotelMedia = [
   { src: "/manus-storage/southside-classic_e037045c.jpg", alt: "SouthSide bathroom with a rainfall shower", label: "Room details", detail: "", source: "https://www.instagram.com/reel/DdFP69HtWUR/", variant: "moss" as const },
 ] as const;
 
-export const hotelVideo = {
-  src: "/manus-storage/southside-tour_c48569e3.mp4",
-  poster: "/manus-storage/southside-tour_c1a0bee6.jpg",
-  alt: "SouthSide Hotel and Suites tour in Abraka",
-  source: "https://www.instagram.com/reel/DMfVzISNlkD/",
-} as const;
-
 const representative = {
-  classic: { image: hotelMedia[1].src, imageAlt: hotelMedia[1].alt, imageDetail: "", media: [{ src: hotelMedia[1].src, alt: hotelMedia[1].alt, label: "Room interior" }, { src: hotelMedia[3].src, alt: hotelMedia[3].alt, label: "Bathroom details" }] as const },
-  royal: { image: hotelMedia[1].src, imageAlt: hotelMedia[1].alt, imageDetail: "", media: [{ src: hotelMedia[1].src, alt: hotelMedia[1].alt, label: "Room interior" }] as const },
-  superior: { image: hotelMedia[1].src, imageAlt: hotelMedia[1].alt, imageDetail: "", media: [{ src: hotelMedia[1].src, alt: hotelMedia[1].alt, label: "Room interior" }] as const },
-  luxury205: { image: hotelMedia[1].src, imageAlt: hotelMedia[1].alt, imageDetail: "", media: [{ src: hotelMedia[1].src, alt: hotelMedia[1].alt, label: "Room interior" }] as const },
-  luxury208: { image: hotelMedia[1].src, imageAlt: hotelMedia[1].alt, imageDetail: "", media: [{ src: hotelMedia[1].src, alt: hotelMedia[1].alt, label: "Room interior" }] as const },
-  premium306: { image: hotelMedia[1].src, imageAlt: hotelMedia[1].alt, imageDetail: "", media: [{ src: hotelMedia[1].src, alt: hotelMedia[1].alt, label: "Room interior" }] as const },
-  premium308: { image: hotelMedia[1].src, imageAlt: hotelMedia[1].alt, imageDetail: "", media: [{ src: hotelMedia[1].src, alt: hotelMedia[1].alt, label: "Room interior" }] as const },
-  executive: { image: hotelMedia[1].src, imageAlt: hotelMedia[1].alt, imageDetail: "", media: [{ src: hotelMedia[1].src, alt: hotelMedia[1].alt, label: "Room interior" }] as const },
+  classic: { image: "/manus-storage/async-images/h4VsiYI2qsri3oj3gNW8em/image-1.webp", imageAlt: "Classic Room interior" , imageDetail: "" },
+  royal: { image: "/manus-storage/async-images/WjRAYLaGwe6HRgK4pCqLMI/image-1.webp", imageAlt: "Royal Suite interior", imageDetail: "" },
+  superior: { image: "/manus-storage/async-images/WjRAYLaGwe6HRgK4pCqLMI/image-2.webp", imageAlt: "Superior Suite interior", imageDetail: "" },
+  luxury205: { image: "/manus-storage/async-images/WjRAYLaGwe6HRgK4pCqLMI/image-3.webp", imageAlt: "Luxury Room 205 interior", imageDetail: "" },
+  luxury208: { image: "/manus-storage/async-images/WjRAYLaGwe6HRgK4pCqLMI/image-4.webp", imageAlt: "Luxury Room 208 interior", imageDetail: "" },
+  premium306: { image: "/manus-storage/async-images/WjRAYLaGwe6HRgK4pCqLMI/image-5.webp", imageAlt: "Premium Room 306 interior", imageDetail: "" },
+  premium308: { image: "/manus-storage/async-images/X72BhlloLAVs2FvW5msYBR/image-1.webp", imageAlt: "Premium Room 308 interior", imageDetail: "" },
+  executive: { image: "/manus-storage/async-images/X72BhlloLAVs2FvW5msYBR/image-2.webp", imageAlt: "Executive Accommodation interior", imageDetail: "" },
 } as const;
 
 export const provisionalRooms = [
-  { slug: "classic-room", name: "Classic Room", lead: "A calm room for an easy stay in Abraka.", description: "The Classic Room is the practical starting point for a SouthSide stay, with a confirmed rate of ₦55,000 per night.", amount: 55000, evidence: "SouthSide room catalogue", verification: "verified" as VerificationState, ...representative.classic, amenities: ["Comfortable room setting", "Direct hotel enquiry"] },
-  { slug: "royal-suite", name: "Royal Suite", lead: "More space for longer visits and slower mornings.", description: "The Royal Suite offers a generous SouthSide stay at a confirmed rate of ₦65,000 per night.", amount: 65000, evidence: "SouthSide room catalogue", verification: "verified" as VerificationState, ...representative.royal, amenities: ["Suite setting", "Direct hotel enquiry"] },
-  { slug: "superior-suite", name: "Superior Suite", lead: "A suite choice for guests who want a little more room.", description: "The Superior Suite gives guests another way to shape a SouthSide stay at ₦65,000 per night.", amount: 65000, evidence: "SouthSide room catalogue", verification: "verified" as VerificationState, ...representative.superior, amenities: ["Suite setting", "Direct hotel enquiry"] },
-  { slug: "luxury-room-205", name: "Luxury Room 205", lead: "A refined room choice for a focused stay.", description: "Luxury Room 205 is available in the SouthSide room catalogue at ₦75,000 per night.", amount: 75000, evidence: "SouthSide room catalogue", verification: "verified" as VerificationState, ...representative.luxury205, amenities: ["Refined room setting", "Direct hotel enquiry"] },
-  { slug: "luxury-room-208", name: "Luxury Room 208", lead: "A polished room for evenings in Abraka.", description: "Luxury Room 208 is a polished SouthSide room choice at ₦75,000 per night.", amount: 75000, evidence: "SouthSide room catalogue", verification: "verified" as VerificationState, ...representative.luxury208, amenities: ["Refined room setting", "Direct hotel enquiry"] },
-  { slug: "premium-room-306", name: "Premium Room 306", lead: "A premium room for guests who value a composed stay.", description: "Premium Room 306 offers a composed SouthSide stay at ₦95,000 per night.", amount: 95000, evidence: "SouthSide room catalogue", verification: "verified" as VerificationState, ...representative.premium306, amenities: ["Premium room setting", "Direct hotel enquiry"] },
-  { slug: "premium-room-308", name: "Premium Room 308", lead: "A premium room for a more considered visit.", description: "Premium Room 308 offers a considered SouthSide stay at ₦95,000 per night.", amount: 95000, evidence: "SouthSide room catalogue", verification: "verified" as VerificationState, ...representative.premium308, amenities: ["Premium room setting", "Direct hotel enquiry"] },
-  { slug: "executive-accommodation", name: "Executive Accommodation", lead: "A comfortable base for work and longer days.", description: "Executive Accommodation gives guests a practical SouthSide base at ₦105,000 per night.", amount: 105000, evidence: "SouthSide room catalogue", verification: "verified" as VerificationState, ...representative.executive, amenities: ["Executive stay setting", "Direct hotel enquiry"] },
+  { slug: "classic-room", name: "Classic Room", lead: "A calm room for an easy stay in Abraka.", description: "The Classic Room is the practical starting point for a SouthSide stay. The public guide rate is drawn from indexed hotel content and should be reconfirmed for your dates.", amount: 55000, evidence: "Indexed SouthSide room page and official classic-room social content", verification: "provisional" as VerificationState, ...representative.classic, amenities: ["Comfortable room setting", "Room arrangement to confirm with the hotel", "Direct hotel enquiry"] },
+  { slug: "royal-suite", name: "Royal Suite", lead: "More space for longer visits and slower mornings.", description: "The Royal Suite is presented in the public SouthSide catalogue as a more generous stay. Ask the hotel to confirm the current arrangement and rate.", amount: 65000, evidence: "Indexed SouthSide room catalogue reference", verification: "provisional" as VerificationState, ...representative.royal, amenities: ["Suite setting", "Current inclusions to confirm", "Direct hotel enquiry"] },
+  { slug: "superior-suite", name: "Superior Suite", lead: "A suite choice for guests who want a little more room.", description: "The Superior Suite gives guests another way to shape a SouthSide stay. The public guide rate is a lead for confirmation, not a guaranteed quote.", amount: 65000, evidence: "Indexed SouthSide room catalogue reference", verification: "provisional" as VerificationState, ...representative.superior, amenities: ["Suite setting", "Room details by direct enquiry", "Guide rate requires confirmation"] },
+  { slug: "luxury-room-205", name: "Luxury Room 205", lead: "A refined room choice for a focused stay.", description: "Luxury Room 205 is part of the indexed SouthSide room catalogue. Contact the hotel for current room details, rate, and availability.", amount: 75000, evidence: "Indexed SouthSide room page", verification: "provisional" as VerificationState, ...representative.luxury205, amenities: ["Refined room setting", "Room details by direct enquiry", "Guide rate requires confirmation"] },
+  { slug: "luxury-room-208", name: "Luxury Room 208", lead: "A polished room for evenings in Abraka.", description: "Luxury Room 208 is a SouthSide room choice for guests looking for a polished base in Abraka. Ask the hotel to confirm the public guide rate for your dates.", amount: 75000, evidence: "Indexed SouthSide room page", verification: "provisional" as VerificationState, ...representative.luxury208, amenities: ["Refined room setting", "Direct hotel enquiry", "Guide rate requires confirmation"] },
+  { slug: "premium-room-306", name: "Premium Room 306", lead: "A premium room for guests who value a composed stay.", description: "Premium Room 306 offers another SouthSide accommodation choice for business, event, and personal visits. Contact the hotel for the current room arrangement and rate.", amount: 95000, evidence: "Indexed SouthSide room catalogue reference", verification: "provisional" as VerificationState, ...representative.premium306, amenities: ["Premium room setting", "Direct hotel enquiry", "Guide rate requires confirmation"] },
+  { slug: "premium-room-308", name: "Premium Room 308", lead: "A premium room for a more considered visit.", description: "Premium Room 308 is part of the SouthSide catalogue for guests planning time in Abraka. Ask the hotel for current room details, rate, and availability.", amount: 95000, evidence: "Indexed SouthSide room catalogue reference", verification: "provisional" as VerificationState, ...representative.premium308, amenities: ["Premium room setting", "Direct hotel enquiry", "Guide rate requires confirmation"] },
+  { slug: "executive-accommodation", name: "Executive Accommodation", lead: "A comfortable base for work and longer days.", description: "Executive Accommodation is designed for guests who want a practical SouthSide base while work or an event fills the day. Call the hotel for the current arrangement and rate.", amount: 105000, evidence: "Indexed SouthSide room catalogue reference", verification: "provisional" as VerificationState, ...representative.executive, amenities: ["Executive stay setting", "Direct hotel enquiry", "Guide rate requires confirmation"] },
 ] as const;
 
 export const facilityLeads = [
@@ -77,8 +70,8 @@ export const attributedReviews = [
 ];
 
 export const publicSourceLinks = [
-  { label: "SouthSide Instagram", url: hotelProfile.social.instagram, note: "Rooms, arrival, food, and stay content from SouthSide." },
-  { label: "SouthSide TikTok", url: hotelProfile.social.tiktok, note: "Tours and room content from SouthSide in Abraka." },
+  { label: "SouthSide Instagram", url: hotelProfile.social.instagram, note: "The official-looking social channel with room, arrival, food, and stay content." },
+  { label: "SouthSide TikTok", url: hotelProfile.social.tiktok, note: "A hotel-branded account with tours and room content from Abraka." },
   { label: "Google Maps listing", url: hotelProfile.social.maps, note: "A route and place reference for guests; ratings and user media can change." },
   { label: "SouthSide website", url: hotelProfile.social.website, note: "The hotel web address used in public listings; confirm live details with the hotel." },
 ];
@@ -86,14 +79,14 @@ export const publicSourceLinks = [
 export const faqItems = [
   { question: "Where is SouthSide Hotel and Suites located?", answer: "SouthSide Hotel and Suites is on Winners Street in Abraka, Delta State, Nigeria. Call the hotel for the best directions from your starting point." },
   { question: "How can I make a reservation?", answer: "Use the booking page to begin with your dates, guests, and preferred room. You can also call or WhatsApp the hotel for a direct enquiry." },
-  { question: "What are the room rates?", answer: "Confirmed nightly rates are listed on each room page. Contact the hotel to plan your dates and preferred room." },
+  { question: "What are the public room rates?", answer: "The catalogue shows public guide rates from indexed hotel content. Contact the hotel to confirm the current rate for your dates before you travel." },
   { question: "What facilities are available?", answer: "SouthSide presents reception, rooms, a gym, lounge, food, and event-related spaces. Ask the hotel about current access, hours, and arrangements." },
   { question: "What are the check-in and check-out times?", answer: "Call the hotel before your arrival for the current check-in and check-out times." },
   { question: "What payment methods are accepted?", answer: "Ask the hotel which payment method is best for your reservation and dates." },
 ];
 
 export const pendingApprovals = [
-  "Confirm the current room catalogue and inventory before selling online.",
+  "Confirm the current room catalogue, guide rates, and inventory before selling online.",
   "Confirm street wording, guest policies, and arrival details.",
   "Confirm written permission for each hotel-supplied social image before launch.",
   "Confirm payment, email, and notification credentials and test them end to end.",
